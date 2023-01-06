@@ -6,9 +6,12 @@ function App() {
     function addValue() {
         setValue(value + 1)
     }
+    function subtractValue() {
+      setValue(value - 1)
+    }
     return (
       <div className="counter">
-          <button className="counter--minus">–</button>
+          <button className="counter--minus" onClick={subtractValue}>–</button>
           <div className="counter--count">
               <h1>{value}</h1>
           </div>
