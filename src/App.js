@@ -4,10 +4,10 @@ import './App.css';
 function App() {
     const [value, setValue]= React.useState(0)
     function addValue() {
-        setValue(value + 1)
+        setValue(prevValue => prevValue + 1)
     }
     function subtractValue() {
-      setValue(value - 1)
+      setValue(prevValue => prevValue - 1)
     }
     return (
       <div className="counter">
